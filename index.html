@@ -1,0 +1,85 @@
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css" />
+	<title> Banana Power </title> 
+	<script>
+	 function banner(){ 
+	 var text = confirm("Do You Really Want to Visit The Snow Report For The Beav?"); 
+	 return text; 
+	 }
+
+  function answer(){ 
+	var radio = document.getElementsByName("trivia");
+	var selection = false;
+	var message = ""; 
+	for( var i = 0; i < radio.length; i++) {
+	  if(radio[i].value == "yes" && radio[i].checked == true) { 
+	    selection = true; 
+	  } //end if statement 
+	} //end for loop
+	if(selection == true) {
+		message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+	} else { 
+		message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+	}
+		document.getElementById("response").innerHTML = message;
+} //end function answer
+
+
+	</script>
+</head> 
+<body id="background"> 
+	<a href="http://www.skithebeav.com/c/mountain/weather-report--cams" onclick="return banner()"> 
+	<header> <span class="wrapy-text">I <span class="wrap-text">love</span> to ski!</span> </header>
+	</a> 
+<nav>
+	<ul id="navmenu">
+	  <li class="navitem"> <a href="home.html">Home</a> </li>
+	  <li class="navitem"> <a href="games.html">Games</a> </li>
+	  <li class="navitem"> <a href="videos.html">Videos</a> </li>
+	</ul>
+</nav>
+
+	<div id="rightside">
+	   <div class="wrap-trivia"> 
+		<h2>Football Trivia Question:</h2>
+			<p>Who won the NFL championship in 1997?</p> 
+		<form>
+		   <div id="response"> </div>
+			<input type="radio" name="trivia" value="no"> New England Patriots <br>
+			<input type="radio" name="trivia" value="no"> Dallas Cowboys <br>
+			<input type="radio" name="trivia" value="yes"> The Green Bay Packers <br>
+			<input type="radio" name="trivia" value="no"> Seattle Seahawks <br>
+			<input type="button" value="Click Here" id="button" onclick="answer()">
+
+		</form>
+	   </div>
+	</div>
+
+    <div id="leftside">
+	  <h1> Making Bananas Great Again </h1>
+	  <p class="paragraph"><u>Bananas</u> are amongst the most <b>mystical units</b> in our vast universe! I would know, because I had one for breakfast once upon a time.. It all started when I heard a loud rumbling coming forth from within the deep, dark depths of my tumtum! I was struck with absolute fear and trembling when I realized… I needed a nana!! Fortunately there happens to be one sitting on the chopping block prepared for me <i>its worst nightmare</i> to devour it, peel and all!!!</p>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/hZWxlxrIWus?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <audio width="400" height="220" controls autoplay>
+     <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+     </audio> 
+    </div>
+    <div class="clearfloat"> </div>
+
+	<div class="wrap-list">
+		<ol>
+			<li class="listitem">  Bananas can also be referred to as nanas. (according to me) </li>
+			<li class="listitem">  They come in many different sizes and styles. </li>
+			<li class="listitem">  If you don't have a knife you can snap them in halve. </li>
+		</ol>
+	</div>
+
+	<img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi9-MrT-bXdAhWB54MKHbc2AgsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.goodhousekeeping.com%2Fhealth%2Fdiet-nutrition%2Fa47807%2Fbanana-nutrition%2F&psig=AOvVaw3HK1czel_AMdq8ZqjIS4Bh&ust=1536856011957709" />
+	<img src="https://cdn1.medicalnewstoday.com/content/images/articles/271157-bananas.jpg" /> 
+	<hr>
+	<center> Rockwell <a href="https://en.wikipedia.org/wiki/Banana">My Favorite Website</a> </center>
+	<footer> Made by Rockwell Lathen</footer>
+</body> 
+</html>
+
+
+
