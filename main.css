@@ -1,0 +1,130 @@
+.listitem { 
+	color:blue; 
+	font-size:22px; 
+	}
+.paragraph {
+ 	color:pink;
+ 	font-size:25px; 
+}
+#background {
+background-color:orange;
+}
+#button {
+width:300px;
+height:150px;
+color:white;
+background-color:blue;
+border-radius:15px;
+}
+header {
+height:250px;
+width:99%;
+border:2px solid black;
+background-color:#ccffff;
+margin-bottom:100px;
+}
+footer {
+height:26px;
+width:99%;
+border:2px solid black;
+background-color:#ff9999;
+margin-top:30px;
+}
+.wrap-trivia {
+height:500px;
+width:450px;
+border:5px #6600ff;
+padding-left:30px;
+}
+.wrap-list {
+height:150px;
+width:450px;
+border:5px dashed green;
+}
+.wrap-text {
+color: #ffffff;
+font-size: 5em;
+}
+.wrapy-text {
+color: #6600cc;
+font-size: 3em;
+}
+.navitem {
+list-style-type: none;
+display:inline;
+padding-right:1.5em;
+}
+#navmenu {
+width:250px;
+height:30px;
+margin:auto;
+}
+
+a:link{ 
+color:red;
+} 
+
+a:visited{ 
+color:blue;
+} 
+
+a:hover{ 
+color:purple;
+} 
+
+a:active{ 
+color:orange;
+}
+
+
+#rightside {
+float:right;
+width:50%;
+}
+
+#leftside {
+width:50%;
+}
+
+.clearfloat {
+clear:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Position.html CSS*/
+#one{
+height: 150px;
+width: 150px;
+background-color: red;
+display: inline-block;
+position: absolute;
+z-index: 2;
+}
+
+#two{
+height: 150px;
+width: 150px;
+background-color: #abbcdd;
+display: inline-block;
+position: fixed; left:25%; 
+z-index: 1;
+}
+
+#three{
+height: 150px;
+width: 150px;
+background-color: #bbaacc;
+display: inline-block;
+position: absolute;
+}
